@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Foundation_Heart</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Foundation Heart</h1>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.name }} <br/><br/>
+            {{ form.email }} <br/><br/>
+            {{ form.message }} <br/><br/>
+            <button type="submit">Send</button>
+
+            <br/><br/>
+            {{ data }}
+        </form>
+    </body>
+</html>
