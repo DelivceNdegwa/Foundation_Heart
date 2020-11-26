@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
+from django.contrib import messages
+
 from .keys import key, user_email, user_password
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.

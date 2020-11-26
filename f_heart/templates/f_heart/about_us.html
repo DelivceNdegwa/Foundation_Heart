@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="utf-8">
+		<title>Startup UI Kit - Free Sample</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+		<link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+		<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+		<link rel="stylesheet" href="{% static 'bootstrap/css/style.css' %}">
+		<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i|Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    </head>
+    <body>
+        <section class="cover-1 text-center" style="background-image: url('{% static "images/cover-bg-1.jpg" %}');">
+			<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+				<div class="container">
+					<a class="navbar-brand" href="#">Navbar</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse pull-xs-right justify-content-end" id="navbarSupportedContent">
+						<ul class="navbar-nav mt-2 mt-md-0">
+							<li class="nav-item active">
+								<a class="nav-link" href="{% url 'index' %}">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="{% url 'about_us' %}">About Us <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="{% url 'our_programs' %}">Our Programs</a>
+							</li>
+							<li class="nav-item">
+								<a class="btn btn-outline-white btn-outline" href="{% url 'index' %}#contact_us">Contact Us</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div class="cover-container pb-5">
+				<div class="cover-inner container">
+					<h1 class="jumbotron-heading">Say <em>hello</em> to our	<strong>Startup UI Kit</strong></h1>
+					<p class="lead">A collection of coded HTML and CSS elements to help your build your startup website. Clean design, fully responsive and based on Bootstrap 4.</p>
+					<p>
+						<a href="#" class="btn btn-primary btn-lg mb-2 mr-2 ml-2">Main call to action</a>
+						<a href="#" class="btn btn-outline-white btn-lg mb-2 ml-2 ml-2">Secondary action</a>
+					</p>
+				</div>
+			</div>
+		</section>
+        <h1>About Us</h1>
+    </body>
+</html>

@@ -15,10 +15,10 @@ class InquiriesForm(forms.ModelForm):
         fields = '__all__'
 
 class MembersOfProgramForm(forms.ModelForm):
-    first_name = forms.CharField(max_length=50, widget=forms.TextInput(attrs = {'placeholder':'First name', 'class':'form-control-custom mb-4'}))
-    last_name = forms.CharField(max_length=50, widget=forms.TextInput(attrs = {'placeholder':'Last name', 'class':'form-control-custom mb-4'}))
-    email = forms.EmailField(widget=forms.EmailInput(attrs = {'placeholder':'Email Address', 'class':'form-control-custom mb-4'}))
-    phone_number = forms.CharField(max_length=50, widget=forms.TextInput(attrs = {'placeholder':'Phone number', 'class':'form-control-custom mb-4'}))
+    first_name = forms.CharField(max_length=50, widget=forms.TextInput(attrs = {'placeholder':'First name', 'class':'input--style-3'}))
+    last_name = forms.CharField(max_length=50, widget=forms.TextInput(attrs = {'placeholder':'Last name', 'class':'input--style-3'}))
+    email = forms.EmailField(widget=forms.EmailInput(attrs = {'placeholder':'Email Address', 'class':'input--style-3'}))
+    phone_number = forms.CharField(max_length=50, widget=forms.TextInput(attrs = {'placeholder':'Phone number', 'class':'input--style-3'}))
 
     class Meta:
         model = MembersOfProgram
