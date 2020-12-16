@@ -15,12 +15,23 @@
 	<body>
 		<style>
 			.cover-1{
-				background-image: linear-gradient( rgba(19, 114, 7, 0.719), rgba(131, 11, 11, 0.692)), url("{% static 'images/3600.jpg' %}");
+				background-image: linear-gradient( rgba(19, 114, 7, 0.719), rgba(131, 11, 37, 0.726)), url("{% static 'images/3600.jpg' %}");
 				background-attachment: fixed;
+				padding-bottom: 0%;
 			}
+
+			.content-1 {
+				background-image: linear-gradient(rgb(255, 255, 255),rgb(247, 247, 247),rgb(206, 253, 205)), none;
+				
+			}
+			
+			.features-1 {
+				background-image: linear-gradient(rgb(206, 253, 205),rgb(206, 253, 205),rgb(195, 245, 195)), none;
+			}
+
 			.contact-1 {
 				/* background: #2b2d34  ; */
-				background-image:  linear-gradient( rgba(149, 50, 241, 0.589), rgba(161, 78, 147, 0.801)), url("{% static 'images/developers-1600.jpg' %}");
+				background-image:  linear-gradient( rgba(108, 255, 94, 0.411), rgba(161, 78, 147, 0.801)), url("{% static 'images/developers-1600.jpg' %}");
 				padding-bottom: 0%; 
 				height: 200%;
 				background-size: cover;
@@ -28,7 +39,6 @@
 				background-repeat: no-repeat;
 				background-position: center;
 			}
-
 		</style>
 		<section class="cover-1 text-center">
 			<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
@@ -61,62 +71,56 @@
 				</div>
 			</div>
 		</section>
-		
+
+		<section class="content-1 text-center">
+			<div>
+				<div class="container">
+					<h2>About Us</h2>
+					<div class="divider"></div>
+					<div class="row"><!--justify-center-->
+						<div class="col-md-6 text-center">
+							<img class="mb-4 img-fluid" src="{% static 'images/youthforumecosoc.jpg' %}" >
+						</div>
+						<div class="col-md-6 text-center text-md-left" >
+							<h3 class="mb-4 mt-4">Youth, the current society</h3>
+							<p class="mb-4 lead">The main reason behind Foundation Heart is getting to know the current society(youth) better, and in this process helping them to discover the major role they play in shaping the whole society. We advocate showing the relevance of education to the current youth(both class and life education).</p>
+							<p><a class="btn btn-lg btn-outline-success" href="{% url 'about_us'  %}" role="button">Find out more</a></p>
+						</div> 
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<section class="features-1 text-center">
 			<div class="container">
-				<h2>Features</h2>
+				<h2>Our Programs</h2>
 				<div class="divider"></div>
 				<div class="row">
-					<div class="col-md-4 col-feature">
-						<div class="rounded-circle justify-center">
-							<em class="fa fa-2x fa-paint-brush"></em>
-						</div>
-						<h4>Clean Design</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse cursus erat sed sem sagittis cursus.</p>
-						<p><a class="btn btn-outline-primary mt-2" href="#" role="button">View details</a></p>
-					</div>
-					<div class="col-md-4 col-feature">
+					<div class="col-md-6 col-feature">
 						<div class="rounded-circle justify-center">
 							<em class="fa fa-2x fa-desktop"></em>
 						</div>
-						<h4>Responsive</h4>
+						<h4>Education</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse cursus erat sed sem sagittis cursus.</p>
-						<p><a class="btn btn-outline-primary mt-2" href="#" role="button">View details</a></p>
 					</div>
-					<div class="col-md-4 col-feature">
+					<div class="col-md-6 col-feature">
 						<div class="rounded-circle justify-center">
 							<em class="fa fa-2x fa-code"></em>
 						</div>
-						<h4>Bootstrap 4</h4>
+						<h4>Drugs and Substance abuse</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse cursus erat sed sem sagittis cursus.</p>
-						<p><a class="btn btn-outline-primary mt-2" href="#" role="button">View details</a></p>
 					</div>
 				</div>
+				<p><a class="btn btn-lg btn-outline-success" href="{% url 'our_programs'  %}" role="button">Learn more</a></p>
 			</div>
 		</section>
 		
-
-		<section class="content-1">
-			<div class="container">
-				<div class="row justify-center">
-					<div class="col-md-6 text-center">
-						<img class="mb-4 img-fluid" src="{% static 'images/placeholder-phone.png' %}" >
-					</div>
-					<div class="col-md-6 text-center text-md-left" >
-						<h2 class="mb-4 mt-4">Talk about your awesome features</h2>
-						<p class="mb-4">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-						<p><a class="btn btn-outline-secondary" href="#" role="button">Find out more	</a></p>
-					</div>
-				</div>
-			</div>
-		</section>
-		
-		<section class="contact-1">
+		<section class="contact-1"  id="contact_us">
 			<div class="container">
 				<div class="row contact-details" style="padding-bottom: 10%;">
 					<div class="col-sm-8 text-center text-md-left mb-4">
 						<h3 style="color: rgb(253, 253, 252);">Ask us a question</h3>
-						<form class="contact-form mt-4" method="POST" id="contact_us">
+						<form class="contact-form mt-4" method="POST">
 							{% csrf_token %}
 							<div class="row">
 								<div class="col-md-5">
@@ -130,7 +134,7 @@
 							<div class="row">
 								<div class="col-md-10">
 									{{ form.message }}
-									<button type="submit" class="btn btn-primary btn-lg mb-4">Send Message</button>
+									<button type="submit" class="btn btn-success btn-lg mb-4">Send Message</button>
 								</div> 
 							</div>
 						</form>

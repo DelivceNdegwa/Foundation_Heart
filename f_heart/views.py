@@ -4,7 +4,11 @@ from django.contrib import messages
 
 from .forms import InquiriesForm, MembersOfProgramForm
 from .models import Inquiries, MembersOfProgram
-from Foundation_Heart.keys import user_email as email_to\
+from Foundation_Heart.keys import user_email as email_to
+
+def our_programs(request):
+
+    return render(request, 'our_programs.html')
 
 def index(request):
     if request.method == 'GET':

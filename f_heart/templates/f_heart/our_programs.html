@@ -10,44 +10,67 @@
 		<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
 		<link rel="stylesheet" href="{% static 'bootstrap/css/style.css' %}">
 		<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i|Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-    </head>
+	</head>
+	<style>
+		.cover-1{
+			background-image: linear-gradient( rgba(23, 26, 23, 0.719), rgba(15, 14, 15, 0.726)), url("{% static 'images/shutterstock_1322209583.jpg' %}");
+			
+		}
+		.card .card-header{
+			color: rgb(78, 83, 87);
+		}
+		.card .card-body h2{
+			color: rgb(78, 83, 87);
+		}
+		.card .card-body p{
+			color: rgb(43, 49, 49);
+		}
+	</style>
     <body>
-        <section class="cover-1 text-center" style="background-image: url('{% static "images/cover-bg-1.jpg" %}');">
-			<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
-				<div class="container">
-					<a class="navbar-brand" href="#">Navbar</a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse pull-xs-right justify-content-end" id="navbarSupportedContent">
-						<ul class="navbar-nav mt-2 mt-md-0">
-							<li class="nav-item">
-								<a class="nav-link" href="{% url 'index' %}">Home</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="{% url 'about_us' %}">About Us</a>
-							</li>
-							<li class="nav-item active">
-								<a class="nav-link" href="{% url 'our_programs' %}">Our Programs <span class="sr-only">(current)</span></a>
-							</li>
-							<li class="nav-item">
-								<a class="btn btn-outline-white btn-outline" href="{% url 'index' %}#contact_us">Contact Us</a>
-							</li>
-						</ul>
+        <section class="cover-1 text-center">
+			<div class="nav-container">
+				<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+					<div class="container">
+						<a class="navbar-brand" href="{% url 'index' %}">Foundation Heart</a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse pull-xs-right justify-content-end" id="navbarSupportedContent">
+							<ul class="navbar-nav mt-2 mt-md-0">
+								<li class="nav-item">
+									<a class="nav-link" href="{% url 'index' %}">Home</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="{% url 'about_us' %}">About Us</a>
+								</li>
+								<li class="nav-item active">
+									<a class="nav-link" href="{% url 'our_programs' %}">Our Programs <span class="sr-only">(current)</span></a>
+								</li>
+								<li class="nav-item">
+									<a class="btn btn-outline-white btn-outline" href="{% url 'index' %}#contact_us">Contact Us</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>	
+			</div>
+			<div class="container">
+				<div class="card">
+					<div class="card-body">
+						<h2>Education</h2>
+						<p class="lead">Foundation Heart emphasizes on motivating youths to get education. The main reason is because it is through this knowledge that youths can get to earn, either through being employed or self-employment. Luckily the education system today is not rigid. Youths can get to learn any form of skills that they are interested in. Foundation Heart gives this oppurtunity to them by opening them up to new learning oppurtunities, by engaging them in conferences and events both online and physically where possible. Register with us today to get this oppurtuities by clicking the button below.</p>
+						 <br><br>
+						<h2>Drug and Substance Abuse</h2>
+						<p class="lead">One of the major factors affecting youth development in the whole of Africa is drug and substance abuse.</p>
+						<a class="btn btn-success btn-lg" href="{% url 'register' %}">Register Here</a>
 					</div>
 				</div>
-			</nav>
-			<div class="cover-container pb-5">
-				<div class="cover-inner container">
-					<h1 class="jumbotron-heading">Say <em>hello</em> to our	<strong>Startup UI Kit</strong></h1>
-					<p class="lead">A collection of coded HTML and CSS elements to help your build your startup website. Clean design, fully responsive and based on Bootstrap 4.</p>
-					<p>
-						<a href="#" class="btn btn-primary btn-lg mb-2 mr-2 ml-2">Main call to action</a>
-						<a href="#" class="btn btn-outline-white btn-lg mb-2 ml-2 ml-2">Secondary action</a>
-					</p>
-				</div>
-			</div>
+			</div>	
 		</section>
-        <h1>Our Programs</h1>
     </body>
 </html>
+
+plant_signal: twitter
+plantsignal: linked in
+plantsignal: Instagram
+Plant Signal: facebook
