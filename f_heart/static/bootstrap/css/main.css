@@ -168,14 +168,7 @@
   .bg-red {
     background: #fa4251;
   }
-  
-  .bg-gra-01 {
-    background: -webkit-gradient(linear, left bottom, left top, from(#dd0b0b), to(#480686));
-    background: -webkit-linear-gradient(bottom, #d97ef5 0%, #480686 100%);
-    background: -moz-linear-gradient(bottom, #d97ef5 0%, #480686 100%);
-    background: -o-linear-gradient(bottom, #863557 0%, #480686 100%);
-    background: linear-gradient(to top, #9e647c 0%, #7805c4 100%);
-  }
+
   
   /* ==========================================================================
      #SPACING
