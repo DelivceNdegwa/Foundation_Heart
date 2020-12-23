@@ -1,3 +1,5 @@
+super_user = 'Cess'
+super_user_password = 'XcilleCEO2020.'
 user_email = 'fhearttest@gmail.com ' 
 f_heart_app_password = 'testingthisemail'
 user_password = f_heart_app_password
