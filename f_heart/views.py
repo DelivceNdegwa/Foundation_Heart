@@ -37,7 +37,6 @@ def index(request):
 
     context = {
                 'form' : form,
-                'data' : Inquiries.objects.all()
             }
 
     return render(request, 'f_heart/index.html', context)
