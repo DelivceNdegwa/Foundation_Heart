@@ -1,96 +1,99 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-		<meta charset="utf-8">
-		<title>Foundation Heart About Us</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-		<link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
-		<link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
-		<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
-		<link rel="stylesheet" href="{% static 'bootstrap/css/style.css' %}">
-		<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i|Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-	<style>
-		.cover-1{
-			background-image: linear-gradient( rgba(25, 32, 51, 0.719), rgba(160, 157, 113, 0.692)), url("{% static 'images/youthforumecosoc.jpg' %}");
-			background-attachment: fixed;
-		}
-		.card {
-			padding-bottom: 10%;
-		}
-		.card .card-header{
-			color: rgb(78, 83, 87);
-		}
-		.card .card-body h3{
-			color: rgb(78, 83, 87);
-		}
-		.card .card-body p{
-			color: rgb(43, 49, 49);
-		}
-	</style>
-	</head>
-	<!-- style="background-image:  url('{% static "images/youthforumecosoc.jpg" %}');" -->
-    <body>
-        <section class="cover-1 text-center" >
-			<div class="nav-container">
-				<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
-					<div class="container">
-						<a class="navbar-brand" href="{% url 'index' %}">Foundation Heart</a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+<head>
+    <meta charset="utf-8">
+    <title>Foundation Heart About Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i|Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <style>
+        .cover-1 {
+            background-image: linear-gradient( rgba(25, 32, 51, 0.719), rgba(160, 157, 113, 0.692)),
+            url("{% static 'images/youthforumecosoc.jpg' %}");
+            background-attachment: fixed;
+        }
+        
+        .card {
+            padding-bottom: 10%;
+        }
+        
+        .card .card-header {
+            color: rgb(78, 83, 87);
+        }
+        
+        .card .card-body h3 {
+            color: rgb(78, 83, 87);
+        }
+        
+        .card .card-body p {
+            color: rgb(43, 49, 49);
+        }
+    </style>
+</head>
+<!-- style="background-image:  url('{% static "images/youthforumecosoc.jpg" %}');" -->
+
+<body>
+    <section class="cover-1 text-center">
+        <div class="nav-container">
+            <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+                <div class="container">
+                    <a class="navbar-brand" href="{% url 'index' %}">Foundation Heart</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
 						</button>
-						<div class="collapse navbar-collapse pull-xs-right justify-content-end" id="navbarSupportedContent">
-							<ul class="navbar-nav mt-2 mt-md-0">
-								<li class="nav-item">
-									<a class="nav-link" href="{% url 'index' %}">Home</a>
-								</li>
-								<li class="nav-item active">
-									<a class="nav-link" href="{% url 'about_us' %}">About Us <span class="sr-only">(current)</span></a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="{% url 'our_programs' %}">Our Programs</a>
-								</li>
-								<li class="nav-item">
-									<a class="btn btn-outline-white btn-outline" href="{% url 'index' %}#contact_us">Contact Us</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</nav>
-				<h1>About Us</h1>
-			</div>
-			<div class="">
-				<div class="card">
-					<div class="card-header">
-						<h3>Motto:</h3><br>
-					</div>
-					<div class="card-body">
-						<div class="content-container">
-							<p class="lead">
-								Foundation Heart is a non profitable organization currently based in Kenya that targets the empowering the 
-								youth, through emphasizing on the importance of formal education to their lives, together with the disadvantages 
-								of drug and substance abuse to the lives of a youth. The youth, 
-								contribute to the highest percentage of population that earn either through employment by the government and Non Governmental
-								Organizations or be self employed. Unfortunately this is not the case today. A huge percentage of youth today lack jobs 
-								and also lack the capital and motivation to start their own legal jobs. One of the greatest reasons is lack of proper education,
-								which would give them skills needed for them to have jobs. The second reason being a huge percentage have endulged in
-								 drug and substance abuse that has attributed to them using most of the money they get to obtain drugs. This has led to increase 
-								 in illegal activities in Kenya and the world at large, not to mention the negative health impacts that the drugs have on the youth. 
-								 This organization was therefore founded to help minimize these problems by working with the most affected group, the youth.
-							</p>
-							<h3>Mission</h3>
-							<p class="lead">
-								Foundation Heart aims to reach more youths in the whole of Africa and the globe at large, with the aim of sensitizing them on the importance 
-								of education and the demerits of drug abuse.
-							</p>
-							<h3>Vision</h3>
-							<p class="lead">
-								To increase the percentage of self reliable youths in the society and decrease the percentage of youths chained by drug abused.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-    </body>
+                    <div class="collapse navbar-collapse pull-xs-right justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav mt-2 mt-md-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'index' %}">Home</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="{% url 'about_us' %}">About Us <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'our_programs' %}">Our Programs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-outline-white btn-outline" href="{% url 'index' %}#contact_us">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <h1>About Us</h1>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <div class="content-container">
+                        <div class="card-header">
+                            <h3>YOUTH, THE CURRENT FUTURE</h3><br>
+                        </div>
+                        <p class="lead">
+                            Foundation Heart is a non profitable organization currently based in Kenya that targets the empowering the youth, through emphasizing on the importance of formal education to their lives, together with the disadvantages of drug and substance abuse to
+                            the lives of a youth. The youth, contribute to the highest percentage of population that earn either through employment by the government and Non Governmental Organizations or be self employed. Unfortunately this is not the
+                            case today. A huge percentage of youth today lack jobs and also lack the capital and motivation to start their own legal jobs. One of the greatest reasons is lack of proper education, which would give them skills needed for
+                            them to have jobs. The second reason being a huge percentage have endulged in drug and substance abuse that has attributed to them using most of the money they get to obtain drugs. This has led to increase in illegal activities
+                            in Kenya and the world at large, not to mention the negative health impacts that the drugs have on the youth. This organization was therefore founded to help minimize these problems by working with the most affected group,
+                            the youth.
+                        </p>
+                        <h3>Mission</h3>
+                        <p class="lead">
+                            Foundation Heart aims to reach more youths in the whole of Africa and the globe at large, with the aim of sensitizing them on the importance of education and the demerits of drug abuse.
+                        </p>
+                        <h3>Vision</h3>
+                        <p class="lead">
+                            To increase the percentage of self reliable youths in the society and decrease the percentage of youths chained by drug abused.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
 </html>
