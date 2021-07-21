@@ -90,29 +90,49 @@
 				</div>
 			</div>
 		</section>
-
+		
 		<section class="features-1 text-center">
-			<div class="container">
-				<h2>Our Programs</h2>
-				<div class="divider"></div>
-				<div class="row">
-					<div class="col-md-6 col-feature">
-						<div class="rounded-circle justify-center">
-							<em class="fa fa-2x fa-desktop"></em>
-						</div>
-						<h4>Education</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse cursus erat sed sem sagittis cursus.</p>
-					</div>
-					<div class="col-md-6 col-feature">
-						<div class="rounded-circle justify-center">
-							<em class="fa fa-2x fa-code"></em>
-						</div>
-						<h4>Drugs and Substance abuse</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse cursus erat sed sem sagittis cursus.</p>
-					</div>
-				</div>
-				<p><a class="btn btn-lg btn-outline-success" href="{% url 'our_programs'  %}" role="button">Learn more</a></p>
+		<div class="container">
+		    <h2>Our Programs</h2>
+		    <br>
+		    <div class="row text-center mt-5">
+			<div class="col-md">
+			<div class="card bg-success text-light h-100 p-3">
+			    <div class=" d-flex align-items-center justify-content-center h-100">
+				<h3 class="card-title mb3">Education</h3>
+			    </div>
+			    <div class="card-body d-flex flex-column text-center">
+				<p class="card-text text-white">
+				    The education system is rapidly evolving to accomodate the different abilities and talents that the youth have. Foundation Heart 
+					aims to ensure that youth in the community get a proper education.
+				</p>
+
+				<button type="button" class="btn btn-lg btn-block mt-auto btn-outline-white" onclick="window.location.href='{% url 'our_programs' %}#id_education' ">
+				    Learn More
+				</button>
+			    </div>
 			</div>
+			</div>
+
+			<div class="col-md">
+			<div class="card bg-success text-light h-100 p-3">
+			    <div class=" d-flex align-items-center justify-content-center h-100">
+				<h3 class="card-title mb3">Drugs and Substance abuse</h3>
+			    </div>
+			    <div class="card-body d-flex flex-column text-center">
+				<p class="card-text text-white">
+				    Foundation Heart aims at offering guidance and counselling to youth that have been involved in drugs. The organization also aims
+			    at making youths abstain from the use of drugs
+				</p>
+
+				<button type="button" class="btn btn-lg btn-block mt-auto btn-outline-white" onclick="window.location.href='{% url 'our_programs' %}#id_drugs' ">
+				    Learn More
+				</button>
+			    </div>
+			</div>
+		    </div>
+		    </div>
+		</div>
 		</section>
 		
 		<section class="contact-1"  id="contact_us">
