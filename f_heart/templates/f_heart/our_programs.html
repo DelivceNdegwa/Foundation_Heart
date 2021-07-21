@@ -1,75 +1,85 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-		<meta charset="utf-8">
-		<title>Foundation Heart Our Programs</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-		<link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
-		<link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
-		<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
-		<link rel="stylesheet" href="{% static 'bootstrap/css/style.css' %}">
-		<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i|Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-	</head>
-	<style>
-		.cover-1{
-			background-image: linear-gradient( rgba(23, 26, 23, 0.719), rgba(15, 14, 15, 0.726)), url("{% static 'images/shutterstock_1322209583.jpg' %}");
-			
-		}
-		.card .card-header{
-			color: rgb(78, 83, 87);
-		}
-		.card .card-body h2, h3{
-			color: rgb(78, 83, 87);
-		}
-		.card .card-body p{
-			color: rgb(43, 49, 49);
-		}
-	</style>
-    <body>
-        <section class="cover-1 text-center">
-			<div class="nav-container">
-				<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
-					<div class="container">
-						<a class="navbar-brand" href="{% url 'index' %}">Foundation Heart</a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+<head>
+    <meta charset="utf-8">
+    <title>Foundation Heart Our Programs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i|Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+</head>
+<style>
+    .cover-1 {
+        background-image: linear-gradient( rgba(23, 26, 23, 0.719), rgba(15, 14, 15, 0.726)),
+        url("{% static 'images/shutterstock_1322209583.jpg' %}");
+    }
+    
+    .card .card-header {
+        color: rgb(78, 83, 87);
+    }
+    
+    .card .card-body h2,
+    h3 {
+        color: rgb(78, 83, 87);
+    }
+    
+    .card .card-body p {
+        color: rgb(43, 49, 49);
+    }
+</style>
+
+<body>
+    <section class="cover-1 text-center">
+        <div class="nav-container">
+            <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+                <div class="container">
+                    <a class="navbar-brand" href="{% url 'index' %}">Foundation Heart</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
 						</button>
-						<div class="collapse navbar-collapse pull-xs-right justify-content-end" id="navbarSupportedContent">
-							<ul class="navbar-nav mt-2 mt-md-0">
-								<li class="nav-item">
-									<a class="nav-link" href="{% url 'index' %}">Home</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="{% url 'about_us' %}">About Us</a>
-								</li>
-								<li class="nav-item active">
-									<a class="nav-link" href="{% url 'our_programs' %}">Our Programs <span class="sr-only">(current)</span></a>
-								</li>
-								<li class="nav-item">
-									<a class="btn btn-outline-white btn-outline" href="{% url 'index' %}#contact_us">Contact Us</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</nav>	
-			</div>
-			<div class="container">
-				<div class="card">
-					<div class="card-body">
-						<h2>Education</h2>
-						<p class="lead">Foundation Heart emphasizes on motivating youths to get education. The main reason is because it is through this knowledge that youths can get to earn, either through being employed or self-employment. Luckily the education system today is not rigid. Youths can get to learn any form of skills that they are interested in. Foundation Heart gives this oppurtunity to them by opening them up to new learning oppurtunities, by engaging them in conferences and events both online and physically where possible.</p>
-						 <br><br>
-						<h2>Drug and Substance Abuse</h2>
-						<p class="lead">One of the major factors affecting development in the whole of Africa is drug and substance abuse. The majorly affected group in the society is the youth. Drug addiction has led to many wastage of income earned, where most of the income generated by a working youth goes to purchase of drug. Drugs have led to youths in school also dropping out. Healthwise, drugs reduce the lifespan of users by making them contract diseases. For example drugs taken by means of smoking cause lung cancer while excessive consuption of alcohol over time leads to cancer of the liver. Seeing this made The Foundation Heart Organization take interest in educating the youths against drugs. </p>
-						<h3>Platforms for our programs</h3>
-						<p class="lead">We run our programs through engaging youth in conferences and events both online and physically where possible. Register with us today be part of our programs by clicking the button below.</p>
-						</p>
-						<a class="btn btn-success btn-lg" href="{% url 'register' %}">Click Here To Register</a>
-					</div>
-				</div>
-			</div>	
-		</section>
-    </body>
-</html>
+                    <div class="collapse navbar-collapse pull-xs-right justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav mt-2 mt-md-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'index' %}">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'about_us' %}">About Us</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="{% url 'our_programs' %}">Our Programs <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-outline-white btn-outline" href="{% url 'index' %}#contact_us">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <h2 id="id_education">Education</h2>
+                    <p class="lead">Foundation Heart emphasizes on motivating youths to get education. The main reason is because it is through this knowledge that youths can get to earn, either through being employed or self-employment. Luckily the education system
+                        today is not rigid. Youths can get to learn any form of skills that they are interested in. Foundation Heart gives this oppurtunity to them by opening them up to new learning oppurtunities, by engaging them in conferences and events
+                        both online and physically where possible.</p>
+                    <br><br>
+                    <h2 id="id_drugs">Drug and Substance Abuse</h2>
+                    <p class="lead">One of the major factors affecting development in the whole of Africa is drug and substance abuse. The majorly affected group in the society is the youth. Drug addiction has led to many wastage of income earned, where most of the income
+                        generated by a working youth goes to purchase of drug. Drugs have led to youths in school also dropping out. Healthwise, drugs reduce the lifespan of users by making them contract diseases. For example drugs taken by means of smoking
+                        cause lung cancer while excessive consuption of alcohol over time leads to cancer of the liver. Seeing this made The Foundation Heart Organization take interest in educating the youths against drugs. </p>
+                    <h3>Platforms for our programs</h3>
+                    <p class="lead">We run our programs through engaging youth in conferences and events both online and physically where possible. Register with us today be part of our programs by clicking the button below.</p>
+                    </p>
+                    <a class="btn btn-success btn-lg" href="{% url 'register' %}">Click Here To Register</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
 
+</html>
